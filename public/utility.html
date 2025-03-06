@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    spacing: {
+                        13: '3.25rem'
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif']
+                    },
+                    colors: {
+                        wpu: '#bada55',
+                        kopi: '#c0ffee' 
+                    }
+                }
+            }
+        };
+    </script>
+    <title>Belajar TailWindCSS</title>
+</head>
+<body class="font-inter">
+
+    <h1 class="text-6xl font-bold text-center my-10">
+        Mari Belajar 
+        <span class="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">
+            TailwindCSS
+        </span>
+    </h1>
+
+    <section class="mb-10 p-8 min-h-[200px] bg-gradient-to-r from-blue-300 via-pink-300 to-yellow-300">
+        <h2 class="text-3xl text-center">Spacing</h2>
+        <div class="m-13 p-4">
+            <p>Margin</p>
+        </div>
+        <div class="py-8 p-4">
+            <p>Padding</p>
+        </div>
+    </section>
+    
+    <section class="mb-10 bg-green-200 p-6">
+        <h2 class="text-3xl text-center">Sizing</h2>
+        <div class="w-32 h-32 bg-wpu flex items-center justify-center text-white font-bold">
+            Kotak 1
+        </div>
+    </section>
+
+
+    <section class="
+    font-inter max-w-3xl mx-auto p-4">
+        <h2 class="mb-2 text-4xl font-bold">Belajar Mengenal Typography pada Tailwindcss</h2>
+        <div class="mb-4 text-lg text-gray-500">
+            By <a href="#" class="text-gray-700 font-semibold">Andina Kanaya</a>, 5 Maret 2025
+        </div>
+        <p class="mb-4">
+            "Lorem ipsum dolor sit amet 
+            <a href="#" class="underline font-semibold text-blue-600">consectetur</a> 
+            adipisicing elit. Quaerat quidem facere voluptatum dolores architecto beatae excepturi magnam, nam dicta quam! 
+            Possimus tenetur soluta tempore sequi amet. A quia laboriosam quae quam in dolore nihil praesentium vel excepturi 
+            tempora, obcaecati facilis saepe soluta. Quidem ad rerum expedita repellendus neque sapiente architecto."
+        </p>        
+        <blockquote class="mb-4 italic font-thin text-xl">
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas fugiat dignissimos quam sit earum! Odio alias animi quibusdam voluptas unde."
+        </blockquote>
+        <p class="mb-4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex veniam accusantium illum, aspernatur placeat sed distinctio illo neque consequatur aut dignissimos minima mollitia vel quae nulla odit consectetur suscipit vitae.
+        </p>
+    </section>
+
+    <div class="max-w-xl h-96 bg-[#bada55] bg-cover bg-center mx-auto mt-[42px] overflow-y-scroll bg-scroll"
+    style="background-image: url('https://source.unsplash.com/1000x600/?computer')">
+<p class="p-5 text-2xl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quo aut delectus iste, possimus accusamus maxime est, iure voluptatem saepe nisi ipsam repellendus quis obcaecati ad consequuntur laudantium numquam architecto vel incidunt! Officiis quasi cum debitis, blanditiis porro facere. Explicabo natus sed qui illo eligendi laborum iusto sapiente magnam fugit cum dolorum, voluptates, facilis nisi porro commodi consectetur modi rem dicta autem assumenda itaque doloremque. Vel explicabo molestiae at fuga, animi laudantium, perferendis totam officia, optio voluptate magnam. Enim ad qui cum voluptas saepe quisquam, consequatur, beatae quaerat debitis perspiciatis accusamus molestiae laudantium, inventore velit excepturi maxime omnis quasi error totam? Nemo voluptatem adipisci veritatis ad rerum expedita facere a, amet, natus corrupti ut mollitia quis iure iste atque, reiciendis dolor itaque cupiditate quisquam quae officia quod vel explicabo! Praesentium, laborum vel autem soluta eligendi nemo nisi nam tempore, iusto libero quidem, sit eum sed temporibus voluptates? Temporibus cumque veniam tempore eveniet distinctio maxime error, vitae delectus odit reiciendis placeat doloremque labore minus dolores voluptatum est ipsam magnam praesentium atque laborum officia repellendus modi! Eligendi, quae! Nemo ut eveniet deserunt, incidunt, obcaecati quod sequi similique dolorum vitae accusantium provident quaerat ipsa error. Voluptatum voluptate laudantium perferendis cupiditate, tempore quos culpa.</p>
+</div>
+    
+<div class="mt-32 max-w-xl mx-auto h-96 bg-slate-300 bg-contain bg-no-repeat bg-center
+rounded-2xl border-8 border-slate-400 shadow-xl shadow-slate-500 overflow-hidden border-8 flex" 
+style="background-image: url('/img/1.jpg')">
+<div class="w-[100px] h-[200px] bg-white/30 m-auto backdrop-blur-md rounded-full"></div>
+</div>
+
+<hr class="my-20  /">
+
+<button class="my-10 bg-sky-500 px-5 py-2 rounded-full text-white font-semibold
+font-inter block mx-auto hover:bg-sky-600 active:bg-sky-700 focus:ring focus:ring-sky-300
+">Simpan</button>
+
+<div class="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5
+shadow-md font-inter hover:bg-sky-500 hover:text-white">
+<h5 class="font-bold text-slate-700 text-lg mb-">My Card</h5>
+<p class="text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eaque similique excepturi iure expedita accusantium dicta! Dolore cupiditate eum voluptate maxime quasi omnis ipsa nostrum, repellendus culpa illum harum cum?</p>
+</div>
+
+
+<div class="mb-96"></div>
+</body>
+</html>
